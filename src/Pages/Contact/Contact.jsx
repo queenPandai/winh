@@ -7,9 +7,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="contact-main-container">
-        <ContactMe />
-      </div>
+      <ContactMe />
       <Social />
     </>
   )
