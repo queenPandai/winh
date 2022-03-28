@@ -6,13 +6,17 @@
     "@emailjs/browser": "^3.4.0",
     "@nivo/core": "^0.79.0",
     "@nivo/network": "^0.79.1",
+    "@svg-drawing/react": "^4.2.2",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "gsap": "^3.9.1",
     "gsap-trial": "^3.9.0",
+    "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-gsap": "^3.2.1",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
@@ -45,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-drawsvg": "^1.1.0"
   }
 }
