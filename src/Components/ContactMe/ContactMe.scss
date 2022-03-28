@@ -1,8 +1,9 @@
 .contact-wrapper {
   .contact-container {
     transform: translatey(30%);
-    min-width: 45vh;
+    width: 60vw;
     margin-left: 8vh;
+    overflow: hidden;
     h1 {
       font-family: var(--mr-font);
       font-size: 50px;
