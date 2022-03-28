@@ -1,31 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Social from '../../Components/Social/Social'
-import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import './About.scss'
 import Profile from '../../assets/images/profile.png'
 import AnimatedBg from '../../Components/AnimatedBg/AnimatedBg'
 const About = () => {
-  const bgRef = useRef()
-  const outlineLogoRef = useRef()
-
-  useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin)
-
-    gsap
-      .timeline()
-      .to(bgRef.current, {
-        duration: 0,
-        opacity: 1,
-      })
-      .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 25,
-        opacity: 0.3,
-      })
-  }, [])
-
   return (
     <>
       <div className="box-wrapper">
