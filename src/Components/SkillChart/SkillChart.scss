@@ -1,0 +1,201 @@
+.skill-wrapper {
+  width: 89vw;
+  margin-left: 11vw;
+  .bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(
+      60deg,
+      rgb(234, 231, 220) 50%,
+      rgba(2, 44, 67, 0.527) 50%
+    );
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+  }
+  .bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+  }
+  .bg3 {
+    animation-duration: 4s;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+  .skill-container {
+    .skill {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      .webSkills {
+        margin: 20px 0px;
+        font-family: var(--ra-font);
+        font-size: 20px;
+        padding: 10px;
+        width: 300px;
+        min-height: 450px;
+        text-align: center;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid RGBA(255, 255, 255, 0.18);
+        box-shadow: 0px 2px 20px 0px RGBA(0, 0, 0, 0.3);
+        ul {
+          width: 280px;
+          margin: 15px 0px;
+          li {
+            text-align: end;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            opacity: 0.9;
+            transition: all 0.7s ease-in-out;
+            font-family: var(--os-font);
+            font-size: 13px;
+            letter-spacing: 1px;
+            border-radius: 3px;
+            font-weight: 400;
+            &:nth-child(1) {
+              width: 95%;
+              background-color: #e34c26;
+            }
+            &:nth-child(2) {
+              width: 90%;
+              background-color: #4664db;
+            }
+            &:nth-child(3) {
+              width: 90%;
+              background-color: #cd6799;
+            }
+            &:nth-child(4) {
+              width: 75%;
+              background-color: #f0db4f;
+            }
+            &:nth-child(5) {
+              width: 65%;
+              background-color: #61dbfb;
+            }
+            &:nth-child(6) {
+              width: 35%;
+              background-color: #68a063;
+            }
+            &:hover {
+              transform: scale(1.1);
+              opacity: 1;
+            }
+          }
+        }
+        span {
+          color: black;
+          opacity: 1;
+          letter-spacing: 1px;
+        }
+      }
+      .techSkills {
+        margin: 20px 0px;
+        font-family: var(--ra-font);
+        font-size: 20px;
+        padding: 10px;
+        width: 300px;
+        min-height: 450px;
+        text-align: center;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid RGBA(255, 255, 255, 0.18);
+        box-shadow: 0px 2px 20px 0px RGBA(0, 0, 0, 0.3);
+        ul {
+          width: 280px;
+          margin: 15px 0px;
+          li {
+            text-align: end;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            transition: all 0.7s ease-in-out;
+            font-family: var(--os-font);
+            font-size: 13px;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            border-radius: 3px;
+            &:nth-child(1) {
+              width: 90%;
+              background-color: #e34c26;
+            }
+            &:nth-child(2) {
+              width: 70%;
+              background-color: #4664db;
+            }
+            &:nth-child(3) {
+              width: 60%;
+              background-color: #cd6799;
+            }
+            &:nth-child(4) {
+              width: 80%;
+              background-color: #f0db4f;
+            }
+            &:nth-child(5) {
+              width: 85%;
+              background-color: #61dbfb;
+            }
+            &:nth-child(6) {
+              width: 90%;
+              background-color: #68a063;
+            }
+            &:hover {
+              transform: scale(1.1);
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .socialSkill {
+        margin: 20px 0px;
+        font-family: var(--ra-font);
+        font-size: 20px;
+        padding: 10px;
+        width: 300px;
+        min-height: 450px;
+        text-align: center;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid RGBA(255, 255, 255, 0.18);
+        box-shadow: 0px 2px 20px 0px RGBA(0, 0, 0, 0.3);
+        .eng,
+        .mym {
+          color: rgb(146, 0, 114);
+          font-size: 22px;
+        }
+        .signature {
+          font-family: var(--mr-font);
+          color: rgb(0, 253, 253);
+          font-size: 30px;
+          letter-spacing: 2px;
+          position: absolute;
+          top: 65%;
+          text-shadow: 5px 3px #004155;
+          transition: all 1s ease-in-out;
+          &:hover {
+            transform: translateY(-5px) translateX(-5px);
+            text-shadow: 10px 8px #004155;
+            font-size: 31px;
+          }
+        }
+      }
+    }
+  }
+}

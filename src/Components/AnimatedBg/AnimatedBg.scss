@@ -1,0 +1,57 @@
+.sky-container {
+  width: 520px;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  right: -55%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  svg {
+    width: 100%;
+    height: auto;
+  }
+  #clouds {
+    -moz-animationfloatright: floatright 30s linear 1s infinite alternate;
+    -ms-animationfloatright: floatright 30s linear 1s infinite alternate;
+    -o-animationfloatright: floatright 30s linear 1s infinite alternate;
+    -webkit-animation: floatright 30s linear 1s infinite alternate;
+    animation: floatright 30s linear 1s infinite alternate;
+  }
+
+  #sun {
+    @media (max-width: 840px) {
+      transform: translateX(80px);
+    }
+  }
+
+  @keyframes floatright {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(250px);
+    }
+  }
+  @-webkit-keyframes floatright {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(250px);
+    }
+  }
+  @-moz-keyframes floatright {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(250px);
+    }
+  }
+  @media (max-width: 840px) {
+    display: block;
+    width: 70vw;
+    top: 5%;
+  }
+}

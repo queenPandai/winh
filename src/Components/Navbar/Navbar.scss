@@ -1,0 +1,112 @@
+.nav-bar {
+  width: 7vh;
+  height: 100vh;
+  background: var(--black);
+  position: fixed;
+  z-index: 3;
+  .logo {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    span {
+      font-family: var(--mo-font);
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--gold);
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+
+    a {
+      font-size: 1.4rem;
+      color: var(--white);
+      display: block;
+      line-height: 55px;
+      height: 55px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.2s ease-out;
+      }
+
+      &:hover {
+        color: var(--red);
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 0.7rem;
+        font-family: var(--ra-font);
+        letter-spacing: 1.5px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        color: var(--gold);
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
+
+    a.works-link {
+      &:after {
+        content: 'WORKS';
+      }
+    }
+    a.album-link {
+      &:after {
+        content: 'ALBUM';
+      }
+    }
+
+    a.active {
+      svg {
+        color: var(--gold);
+      }
+    }
+  }
+}

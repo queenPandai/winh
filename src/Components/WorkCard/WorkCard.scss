@@ -1,0 +1,92 @@
+.workCard-wrapper {
+  h2 {
+    text-align: center;
+    padding: 25px 0px;
+    font-family: var(--ra-font);
+    font-size: 45px;
+    color: var(--black);
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: var(--red);
+  }
+  .workCard-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    .workCard {
+      backdrop-filter: blur(10px);
+      text-align: center;
+      width: 250px;
+      height: 350px;
+      margin: 15px 0px;
+      border: 2px solid black;
+      transition: all 1s ease-in-out;
+      box-shadow: 15px -15px 0px 0px var(--gold);
+      cursor: pointer;
+      img {
+        transform: translateY(15px);
+        width: 200px;
+        height: 150px;
+      }
+      h3 {
+        font-size: 35px;
+        font-weight: 400;
+        font-family: var(--os-font);
+        transform: translatey(10px);
+        margin: 30px 0px;
+        transition: all 1s ease-in-out;
+        letter-spacing: 1px;
+      }
+      svg {
+        font-size: 25px;
+        transform: translatey(10px);
+        transition: all 1s ease-in-out;
+      }
+      p {
+        font-family: var(--ra-font);
+        text-align: start;
+        width: 220px;
+        display: none;
+        letter-spacing: 1px;
+        transition: all 3s ease-in;
+      }
+      a {
+        border: 1px solid var(--red);
+        color: var(--red);
+        padding: 3px 10px;
+        text-decoration: none;
+        margin: 10px;
+        letter-spacing: 1.5px;
+        display: none;
+        transition: all 1s ease-in-out;
+      }
+      &:hover {
+        transform: rotatex(0deg);
+        transform: rotatez(0deg);
+        box-shadow: 0px 0px 30px var(--gold);
+
+        p {
+          display: inline-block;
+        }
+        h3 {
+          margin: 10px 0px;
+          font-size: 25px;
+        }
+        svg {
+          display: none;
+        }
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  h4 {
+    text-align: center;
+    font-family: var(--ra-font);
+    font-size: 35px;
+    padding: 10vh 7vh 5vh 10vh;
+    color: var(--black);
+  }
+}

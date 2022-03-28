@@ -1,0 +1,48 @@
+.social-wrapper {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  z-index: 3;
+  top: 70%;
+  left: 90%;
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: var(--black);
+      margin: 5px;
+      svg {
+        font-size: 25px;
+      }
+      &:hover {
+        transform: scale(1.4);
+        transition: background-color 0.4s, transform 0.4s ease-out;
+        svg.fb-icon {
+          color: #4267b2;
+        }
+        svg.tt-icon {
+          color: #1da1f2;
+        }
+        svg.in-icon {
+          color: #fbad50;
+        }
+        svg.git-icon {
+          color: #171515;
+        }
+        svg.ln-icon {
+          color: #000000;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 525px) {
+    left: 85%;
+    top: 68%;
+  }
+  @media screen and (min-width: 980px) {
+    left: 90%;
+    top: 65%;
+  }
+}

@@ -1,0 +1,95 @@
+.main-container {
+  background-color: var(--bg-color);
+  height: 100vh;
+  z-index: 3;
+  will-change: contents;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 100%;
+    max-height: 90%;
+    @media screen and (max-width: 980px) {
+      transform: translateX(10%);
+    }
+  }
+  h1 {
+    color: var(--black);
+    font-size: 55px;
+    line-height: 65px;
+    margin: 0;
+    font-family: var(--ri-font);
+    font-weight: 400;
+    @media screen and (max-width: 525px) {
+      font-size: 35px;
+    }
+  }
+  .emoji {
+    font-size: 40px;
+    line-height: 40px;
+    @media screen and (max-width: 525px) {
+      font-size: 30px;
+    }
+  }
+  .Win {
+    font-family: 'Fredericka the Great', cursive;
+    color: var(--red);
+    font-size: 55px;
+    @media screen and (max-width: 525px) {
+      font-size: 40px;
+    }
+  }
+  h3 {
+    font-family: var(--os-font);
+    font-size: 40px;
+    color: var(--black);
+  }
+  .typeString {
+    font-family: var(--os-font);
+    font-size: 40px;
+    color: var(--black);
+    @media screen and (max-width: 525px) {
+      font-size: 30px;
+    }
+  }
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+    @media screen and (max-width: 525px) {
+      letter-spacing: 2px;
+    }
+  }
+  .emoji-heart {
+    font-size: 20px;
+    @media screen and (max-width: 525px) {
+      font-size: 15px;
+    }
+  }
+  .flat-btn {
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid var(--red);
+    margin-top: 25px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: var(--blue);
+      color: var(--white);
+      border: 1px solid var(--blue);
+    }
+  }
+}
