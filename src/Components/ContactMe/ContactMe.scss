@@ -1,7 +1,7 @@
 .contact-wrapper {
   .contact-container {
     transform: translatey(30%);
-    width: 60vw;
+    width: 70vw;
     margin-left: 8vh;
     overflow: hidden;
     h1 {
@@ -91,6 +91,10 @@
         border: 1px solid var(--black);
         border-radius: 10px 0 10px 0px;
       }
+    }
+    @media screen and (min-width: 620px) {
+      width: 40vw;
+      transform: translatey(30%) translatex(40%);
     }
   }
 }
