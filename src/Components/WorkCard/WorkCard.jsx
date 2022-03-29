@@ -23,7 +23,7 @@ const WorkCard = () => {
   return (
     <>
       <div className="workCard-wrapper">
-        <h2>My Works</h2>
+        <h2>My Projects</h2>
         <div className="workCard-container">
           <div class="workCard wCard1">
             <img src={WinWeb} alt="" />
