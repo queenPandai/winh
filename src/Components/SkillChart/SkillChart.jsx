@@ -47,7 +47,7 @@ const SkillChart = () => {
                 <SiReact />
               </li>
               <li>
-                NotedJs
+                NodeJs
                 <SiNodedotjs />
               </li>
             </ul>
