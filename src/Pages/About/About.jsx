@@ -16,9 +16,9 @@ const About = () => {
               <h1>About Me</h1>
               <p>
                 I am a very ambitious learner. I want to learn many things
-                especially related to technologies and futurists. I am not very
-                good with arts and designs, but I code simple yet beautiful
-                websites. I love to take on challenges on diverse fields.
+                especially related to technologies and futurists.I code simple
+                yet beautiful websites. I love to take on challenges on diverse
+                fields.
               </p>
               <p>
                 I love watching all kinds of entertainment, movies, series,
@@ -28,7 +28,7 @@ const About = () => {
               </p>
               <p>
                 If I need to define myself in one word, <br />
-                that would be "Jack of All Trades, master of none."
+                that would be "<i>Jack of All Trades</i>".
               </p>
             </div>
           </div>

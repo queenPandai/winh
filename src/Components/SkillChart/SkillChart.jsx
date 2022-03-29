@@ -57,7 +57,7 @@ const SkillChart = () => {
             </span>
             <br />
             <span>
-              I just started learning Nodejs and amvery excited to explore the
+              I just started learning Nodejs and am very excited to explore the
               backend side of web developing.
             </span>
           </div>
